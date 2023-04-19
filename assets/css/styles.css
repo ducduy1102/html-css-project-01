@@ -176,7 +176,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 96px;
+  margin-top: 70px;
 }
 
 .clients .images a {
@@ -646,9 +646,14 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 3px;
+  background: #f9f9f9;
 }
 
-.footer .socaial-link:hover {
+.footer .social-link + .social-link {
+  margin-left: 16px;
+}
+
+.footer .social-link:hover {
   background: #ebebeb;
 }
 
