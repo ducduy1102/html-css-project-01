@@ -55,18 +55,30 @@ a {
 /********************** Header *****************/
 /* font-size dùng rem */
 
-.header {
+.fixed-header {
+  background-color: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+
+.hero-wrap {
   position: relative;
   background-color: #e6f0ff;
+  display: flex;
+  flex-direction: column;
   /* vh(viewheight) chiếm toàn màn hình */
-  height: 100vh;
+  height: calc(100vh - 90px);
 }
 
 .navbar {
   display: flex;
   align-items: center;
   /* lấy thằng gần nhất đo ở đây là cái nút */
-  padding-top: 38px;
+  /* padding-top: 38px; */
+  padding: 12px 0;
+  /* background-color: orange; */
 }
 
 .navbar ul {
