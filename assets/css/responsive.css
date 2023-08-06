@@ -1,5 +1,13 @@
 /* ---------------PC--------------- */
 @media screen and (min-width: 992px) {
+  .mobile-header,
+  .toggle-menu {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* ---------------Tablet and mobile--------------- */
@@ -64,12 +72,29 @@
   .menu-checkbox:checked ~ .menu-drawer {
     transform: translateX(0);
   }
+
+  .separate {
+    border-top: 1.5px solid #ebebeb;
+  }
 }
 
 /* ---------------Tablet--------------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* ---------------Mobile--------------- */
 @media screen and (max-width: 767px) {
+  .menu-drawer {
+    inset: 0 25% 0 0;
+    /* or inset: 0;
+    rồi tạo thêm dấu x dùng label ấn cho nó đóng */
+    padding: 40px;
+  }
+
+  .navbar .action {
+    display: none;
+  }
 }

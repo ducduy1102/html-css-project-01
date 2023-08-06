@@ -68,12 +68,14 @@
           </a>
 
           <!-- Navigation -->
-          <ul>
+          <ul id="pc-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="show-on-mobile separate"><a href="#!">Sign in</a></li>
+            <li class="show-on-mobile"><a href="#!">Sign up</a></li>
           </ul>
 
           <!-- Action -->
@@ -100,13 +102,15 @@
         </a>
 
         <!-- Navigation -->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+        <ul id="mobile-nav"></ul>
+        <script>
+          const pcNav = document.querySelector('#pc-nav');
+          const mobileNav = document.querySelector('#mobile-nav');
+
+          // copy from pc-nav -> mobile-nav
+          mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
       </div>
     </header>
 
