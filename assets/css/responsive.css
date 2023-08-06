@@ -11,7 +11,7 @@
 }
 
 /* ---------------Tablet and mobile--------------- */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
   .navbar {
     position: relative;
   }
@@ -158,14 +158,14 @@
 }
 
 /* ---------------Tablet--------------- */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
   .show-on-mobile {
     display: none;
   }
 }
 
 /* ---------------Mobile--------------- */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .hide-on-mobile {
     display: none;
   }
