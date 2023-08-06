@@ -309,6 +309,7 @@ a {
 }
 
 .featured .desc {
+  margin: 0;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.88;
@@ -328,7 +329,8 @@ a {
 }
 
 .featured .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 70px;
 }
